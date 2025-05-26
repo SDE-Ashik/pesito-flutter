@@ -1,0 +1,87 @@
+{
+  "project_info": {
+    "project_number": "557921819358",
+    "firebase_url": "https://pesito-ce149-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "pesito-ce149",
+    "storage_bucket": "pesito-ce149.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:557921819358:android:5d1fadbef9e8f157f4c04f",
+        "android_client_info": {
+          "package_name": "com.pesito.deliveryapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmfVL63XyEZ-h5o9L-1ZFmlUQ5tiV5c1o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:557921819358:android:13b9bfa9a8bbf77ef4c04f",
+        "android_client_info": {
+          "package_name": "com.pesito.india"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmfVL63XyEZ-h5o9L-1ZFmlUQ5tiV5c1o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:557921819358:android:82f10d4e41decdc4f4c04f",
+        "android_client_info": {
+          "package_name": "com.pesito.storeapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmfVL63XyEZ-h5o9L-1ZFmlUQ5tiV5c1o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:557921819358:android:8c2f395beb74e982f4c04f",
+        "android_client_info": {
+          "package_name": "in.pesito.user"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmfVL63XyEZ-h5o9L-1ZFmlUQ5tiV5c1o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
