@@ -9,12 +9,16 @@ class ItemModel {
   List<Item>? items;
   List<Categories>? categories;
 
-  ItemModel({this.totalSize, this.limit, this.offset, this.items, this.categories});
+  ItemModel(
+      {this.totalSize, this.limit, this.offset, this.items, this.categories});
 
   ItemModel.fromJson(Map<String, dynamic> json) {
     totalSize = json['total_size'];
     limit = json['limit'].toString();
-    offset = (json['offset'] != null && json['offset'].toString().trim().isNotEmpty) ? int.parse(json['offset'].toString()) : null;
+    offset =
+        (json['offset'] != null && json['offset'].toString().trim().isNotEmpty)
+            ? int.parse(json['offset'].toString())
+            : null;
     if (json['products'] != null) {
       items = [];
       json['products'].forEach((v) {
@@ -32,7 +36,9 @@ class ItemModel {
       items = [];
       json['items'].forEach((v) {
         if (v['module_type'] == null ||
-            !Get.find<SplashController>().getModuleConfig(v['module_type']).newVariation! ||
+            !Get.find<SplashController>()
+                .getModuleConfig(v['module_type'])
+                .newVariation! ||
             v['variations'] == null ||
             v['variations'].isEmpty ||
             (v['food_variations'] != null && v['food_variations'].isNotEmpty)) {
@@ -97,8 +103,8 @@ class Item {
   int? organic;
   int? quantityLimit;
   int? flashSale;
-  bool? isStoreHalalActive;
-  bool? isHalalItem;
+  bool? isStoreverifiedActive;
+  bool? isverifiedItem;
   bool? isPrescriptionRequired;
   List<String>? nutritionsName;
   List<String>? allergiesName;
@@ -137,8 +143,8 @@ class Item {
     this.organic,
     this.quantityLimit,
     this.flashSale,
-    this.isStoreHalalActive,
-    this.isHalalItem,
+    this.isStoreverifiedActive,
+    this.isverifiedItem,
     this.isPrescriptionRequired,
     this.nutritionsName,
     this.allergiesName,
@@ -150,10 +156,10 @@ class Item {
     name = json['name'];
     description = json['description'];
     imageFullUrl = json['image_full_url'];
-    if(json['images_full_url'] != null){
+    if (json['images_full_url'] != null) {
       imagesFullUrl = [];
       json['images_full_url'].forEach((v) {
-        if(v != null) {
+        if (v != null) {
           imagesFullUrl!.add(v.toString());
         }
       });
@@ -217,8 +223,8 @@ class Item {
     organic = json['organic'];
     quantityLimit = json['maximum_cart_quantity'];
     flashSale = json['flash_sale'];
-    isStoreHalalActive = json['halal_tag_status'] == 1;
-    isHalalItem = json['is_halal'] == 1;
+    isStoreverifiedActive = json['verified_tag_status'] == 1;
+    isverifiedItem = json['is_verified'] == 1;
     isPrescriptionRequired = json['is_prescription_required'] == 1;
     nutritionsName = json['nutritions_name']?.cast<String>();
     allergiesName = json['allergies_name']?.cast<String>();
@@ -270,8 +276,8 @@ class Item {
     data['organic'] = organic;
     data['maximum_cart_quantity'] = quantityLimit;
     data['flash_sale'] = flashSale;
-    data['halal_tag_status'] = isStoreHalalActive;
-    data['is_halal'] = isHalalItem;
+    data['verified_tag_status'] = isStoreverifiedActive;
+    data['is_verified'] = isverifiedItem;
     data['is_prescription_required'] = isPrescriptionRequired;
     data['nutritions_name'] = nutritionsName;
     data['allergies_name'] = allergiesName;
@@ -287,8 +293,8 @@ class CategoryIds {
   CategoryIds({this.id, this.position});
 
   CategoryIds.fromJson(Map<String, dynamic> json) {
-    id = int.tryParse(json['id'].toString())??0;
-    position = int.tryParse(json['position'].toString())??0;
+    id = int.tryParse(json['id'].toString()) ?? 0;
+    position = int.tryParse(json['position'].toString()) ?? 0;
   }
 
   Map<String, dynamic> toJson() {
@@ -377,7 +383,13 @@ class FoodVariation {
   bool? required;
   List<VariationValue>? variationValues;
 
-  FoodVariation({this.name, this.multiSelect, this.min, this.max, this.required, this.variationValues});
+  FoodVariation(
+      {this.name,
+      this.multiSelect,
+      this.min,
+      this.max,
+      this.required,
+      this.variationValues});
 
   FoodVariation.fromJson(Map<String, dynamic> json) {
     if (json['max'] != null) {

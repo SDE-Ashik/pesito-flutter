@@ -331,20 +331,10 @@ class AppConstants {
         countryCode: 'US',
         languageCode: 'en'),
     LanguageModel(
-        imageUrl: Images.arabic,
-        languageName: 'عربى',
-        countryCode: 'SA',
-        languageCode: 'ar'),
-    LanguageModel(
-        imageUrl: Images.spanish,
-        languageName: 'Spanish',
-        countryCode: 'ES',
-        languageCode: 'es'),
-    LanguageModel(
         imageUrl: Images.bengali,
-        languageName: 'Bengali',
-        countryCode: 'BN',
-        languageCode: 'bn'),
+        languageName: 'Malayalam',
+        countryCode: 'IN',
+        languageCode: 'ml'),
   ];
 
   static List<String> joinDropdown = [
