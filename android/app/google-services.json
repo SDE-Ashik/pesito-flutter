@@ -29,7 +29,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:557921819358:android:13b9bfa9a8bbf77ef4c04f",
         "android_client_info": {
-          "package_name": "com.pesito.india"
+          "package_name": "kerala.pesito.india"
         }
       },
       "oauth_client": [],
@@ -68,6 +68,25 @@
         "mobilesdk_app_id": "1:557921819358:android:8c2f395beb74e982f4c04f",
         "android_client_info": {
           "package_name": "in.pesito.user"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmfVL63XyEZ-h5o9L-1ZFmlUQ5tiV5c1o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:557921819358:android:c1f9023606353cf5f4c04f",
+        "android_client_info": {
+          "package_name": "kerala.pesito.india"
         }
       },
       "oauth_client": [],

@@ -1,4 +1,4 @@
-package com.pesito.india
+package kerala.pesito.india
 
 import io.flutter.embedding.android.FlutterActivity
 
